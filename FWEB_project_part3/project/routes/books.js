@@ -25,7 +25,7 @@ const router = express.Router();
 *           201:
 *               description: Task created successfully
 */
-router.post("/", async (req, res) => {
+router.post("/book", async (req, res) => {
     // try {
         // TODO: Get task data from req.body
         // const { title, Language,Description,author,published_date,Availability_id, reservationid,Reservation_availablity, Location_id} = req.body;
