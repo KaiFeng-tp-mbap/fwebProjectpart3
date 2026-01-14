@@ -1,0 +1,239 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+
+$grid-columns:      12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns:  6;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);
+// h1{
+//   color: white;
+// }
+// h2{
+//   color: white;
+// }
+// li,ul{
+//   color: white;
+// }
+
+body{
+  background-color: black;
+}
+// $container-max-widths: (
+//   sm: 420px,
+//   md: 720px,
+//   lg: 960px
+// );
+// .row{
+//   background-color: lightblue;
+//   color: black;
+//   padding: 10px;
+//   gap: 12px;
+// }
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 18px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.col,.availability-row {
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 18px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.avatar1 {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.text-input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  
+}
+
+.btn-login, .btn-signup, .btn-back {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  float: left;
+}
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  float: center;
+}
+nav{
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+}
+.btn-signup2 {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  float: center;
+}
+.header{
+  width: 80vw; 
+  // height: 0.3px;
+  
+}
+.Reservation-details {
+  text-align: left;
+  color: black;
+  padding: 10px;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 18px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.nav-right-reserve{
+   background-color: grey;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+}
+// .my-row{
+//   // Creates a wrapper for a series of columns
+//   @include make-row();
+// }
+// // Or import Bootstrap variables/functions only:
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.element {
+  // Three columns to start
+  @include row-cols(3);
+
+  // Five columns from medium breakpoint up
+  @include media-breakpoint-up(md) {
+    @include row-cols(5);
+  }
+}
+.myapp-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 20px;
+}
+/* stacked icon + label */
+.icon-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+.nav-right {
+  display: flex;
+  align-items: right;
+  gap: 16px;
+  justify-content: right;
+}
+.Navlogin,.NavSignUp {
+  color : white;
+  font-size: 40px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  float: right;
+}
+
+.icon-label {
+  margin-top: 6px;
+  font-size: 13px;
+  text-align: right;
+}
+
+/* circular avatar */
+.avatar {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+/* small hover effects */
+.icon-tile:hover .icon,
+.icon-button:hover .icon,
+.avatar-link:hover .avatar { opacity: 0.85; }
+
+.btn-signout{
+  background-color:  black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  float: left;
+}

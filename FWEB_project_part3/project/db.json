@@ -1,0 +1,1176 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "email": "Alice@example.com",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "email": "Bob@email.com",
+      "password": "123"
+    },
+    {
+      "id": "9a5c",
+      "name": "sam",
+      "email": "sam@email.com",
+      "password": "123"
+    },
+    {
+      "id": "9436",
+      "name": "aa",
+      "password": "111",
+      "repassword": "111",
+      "email": "aaa@email.com"
+    },
+    {
+      "id": "f9a2",
+      "name": "joe",
+      "password": "111",
+      "repassword": "111",
+      "email": "aaa@email.com"
+    },
+    {
+      "id": "e131",
+      "name": "joe",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe@email.com"
+    },
+    {
+      "id": "9b33",
+      "name": "joe",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe1@email.com"
+    },
+    {
+      "id": "f11a",
+      "name": "joe2",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe2@email.com"
+    },
+    {
+      "id": "01d7",
+      "name": "joe5",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe5@email.com"
+    },
+    {
+      "id": "41fa",
+      "name": "joe6",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe6@email.com"
+    },
+    {
+      "id": "db3f",
+      "name": "joe7",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe7@email.com"
+    },
+    {
+      "id": "c7a5",
+      "name": "joe8",
+      "password": "111",
+      "repassword": "111",
+      "email": "joe8@email.com"
+    },
+    {
+      "id": "7336",
+      "name": "librarian",
+      "password": "111",
+      "repassword": "111",
+      "email": "librarian@gmail.com",
+      "role": "librarian"
+    },
+    {
+      "id": "a08f",
+      "name": "user",
+      "password": "111",
+      "repassword": "111",
+      "email": "user@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "9f51",
+      "name": "test13",
+      "password": "111",
+      "repassword": "111",
+      "email": "test13@email.com",
+      "role": "librarian"
+    },
+    {
+      "id": "0320",
+      "name": "test14",
+      "password": "111",
+      "repassword": "111",
+      "email": "test14@email.com",
+      "role": "user"
+    },
+    {
+      "id": "8bd4",
+      "name": "test15",
+      "password": "111",
+      "repassword": "111",
+      "email": "test15@email.com",
+      "role": "librarian"
+    },
+    {
+      "id": "120c",
+      "name": "test16",
+      "password": "111",
+      "repassword": "111",
+      "email": "test16@email.com",
+      "role": "librarian"
+    },
+    {
+      "id": "3d41",
+      "name": "test17",
+      "password": "111",
+      "repassword": "111",
+      "email": "test17@email.com",
+      "role": "user"
+    },
+    {
+      "id": "9b99",
+      "name": "test18",
+      "password": "111",
+      "repassword": "111",
+      "email": "test18@email.com",
+      "role": "librarian"
+    }
+  ],
+  "book": [
+    {
+      "id": "1",
+      "title": "Book ",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2020-01-01",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "2",
+      "title": "Book 2",
+      "Language": "French",
+      "Description": "Book 2 is a book.",
+      "author": "Jane Doe",
+      "published_date": "2020-01-01",
+      "reservationid": "r2",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l2",
+      "Availability_id": "a2"
+    },
+    {
+      "id": "3",
+      "title": "Book 3",
+      "Language": "Spanish",
+      "Description": "Book 3 is a book.",
+      "author": "sam",
+      "published_date": "2020-01-01",
+      "reservationid": "r3",
+      "Reservation_availablity": "No Reservation  Available",
+      "Location_id": "l2",
+      "Availability_id": "a3"
+    },
+    {
+      "id": "8354",
+      "title": "ww",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-09",
+      "reservationid": "r1",
+      "Reservation_availablity": "No Reservation Available",
+      "Location_id": "l3",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "bc88",
+      "title": "aa",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-09",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l2",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "0fb3",
+      "title": "hhh",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-09",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l2",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "62a7",
+      "title": "rrr",
+      "Language": "English",
+      "Description": "rrr is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-09",
+      "reservationid": "r4",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "8f10",
+      "title": "aaa1",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-09",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "8f62",
+      "title": "ssss",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-16",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "a542",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "5d35",
+      "title": "wwww1",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-16",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1",
+      "Availability_id": "a1"
+    },
+    {
+      "id": "1c15",
+      "title": "gggg",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-20",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "2794",
+      "title": "hhh",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-17",
+      "Availability_id": "e91d",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "1b20",
+      "title": "nnnng",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-17",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "8595",
+      "title": "sss",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-20",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "706e",
+      "title": "sdddg",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-17",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "No Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "279b",
+      "title": "h",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-17",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "f38f",
+      "title": "ddd",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-20",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    },
+    {
+      "id": "2f4c",
+      "title": "jjjjnn",
+      "Language": "English",
+      "Description": "Book 1 is a book.",
+      "author": "John Doe",
+      "published_date": "2025-12-17",
+      "Availability_id": "a1",
+      "reservationid": "r1",
+      "Reservation_availablity": "Reservation Available",
+      "Location_id": "l1"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "r1",
+      "userId": "1",
+      "reserved_user": "John",
+      "bookid": "1",
+      "Reservation_expiry_date": "2020-02-02",
+      "Reservation_date": "2020-01-01",
+      "Location_id": "l1"
+    },
+    {
+      "id": "r2",
+      "userId": "2",
+      "reserved_user": "Sam",
+      "bookid": "2",
+      "Reservation_expiry_date": "2020-02-02",
+      "Reservation_date": "2020-01-01",
+      "Location_id": "l2"
+    },
+    {
+      "id": "r3",
+      "userId": "3",
+      "reserved_user": "Jane",
+      "bookid": "3",
+      "Reservation_expiry_date": "2020-02-02",
+      "Reservation_date": "2020-01-01",
+      "Location_id": "l3"
+    },
+    {
+      "id": "r4",
+      "userId": "3",
+      "reserved_user": "Joe",
+      "bookid": "62a7",
+      "Reservation_expiry_date": "2020-02-02",
+      "Reservation_date": "2020-01-01",
+      "Location_id": "l3"
+    },
+    {
+      "id": "5816",
+      "bookid": "ee10",
+      "Location_id": "l1",
+      "userId": "9436",
+      "reserved_user": "aaa",
+      "Reservation_expiry_date": "2025-12-15",
+      "Reservation_date": "2025-12-15"
+    },
+    {
+      "id": "e51b",
+      "bookid": "ee10",
+      "Location_id": "l2",
+      "userId": "9a5c",
+      "reserved_user": "sam",
+      "Reservation_expiry_date": "2025-12-15",
+      "Reservation_date": "2025-12-15"
+    },
+    {
+      "id": "1443",
+      "bookid": "62a7",
+      "Location_id": "l2",
+      "userId": "9a5c",
+      "reserved_user": "john",
+      "Reservation_expiry_date": "2025-12-15",
+      "Reservation_date": "2025-12-15"
+    },
+    {
+      "id": "e3ef",
+      "bookid": "8f62",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa",
+      "Reservation_expiry_date": "2025-12-17",
+      "Reservation_date": "2025-12-17"
+    },
+    {
+      "id": "bc5c",
+      "bookid": "62a7",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa",
+      "Reservation_expiry_date": "2025-12-19",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "0f4c",
+      "bookid": "62a7",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa1",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-19"
+    },
+    {
+      "id": "0c2d",
+      "bookid": "1",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa22",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "e1f4",
+      "bookid": "1c15",
+      "Location_id": "l1",
+      "userId": "7336",
+      "reserved_user": "librarian",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "73f1",
+      "bookid": "1b20",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa22",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "322c",
+      "bookid": "1b20",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa33",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "184f",
+      "bookid": "8595",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa336",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "ca35",
+      "bookid": "706e",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa336",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "6252",
+      "bookid": "1a26",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa39",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "cb22",
+      "bookid": "1db3",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa30",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "555b",
+      "bookid": "8354",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa30",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "ac9d",
+      "bookid": "279b",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa305",
+      "Reservation_expiry_date": "2025-12-22",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "3c72",
+      "bookid": "279b",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa3e",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "f7e8",
+      "bookid": "f38f",
+      "Location_id": "l1",
+      "userId": "7336",
+      "reserved_user": "librarian",
+      "Reservation_expiry_date": "2025-12-22",
+      "Reservation_date": "2025-12-22"
+    },
+    {
+      "id": "f9ac",
+      "bookid": "f38f",
+      "Location_id": "5f81",
+      "userId": "9a5c",
+      "reserved_user": "aaa3e",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "107a",
+      "bookid": "f38f",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "aaa3l",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "9276",
+      "bookid": "f38f",
+      "Location_id": "l2",
+      "userId": "9a5c",
+      "reserved_user": "lerrr2",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "a212",
+      "bookid": "f38f",
+      "Location_id": "d8cd",
+      "userId": "9a5c",
+      "reserved_user": "lerrr8",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "c2d2",
+      "bookid": "f38f",
+      "Location_id": "1f1f",
+      "userId": "9a5c",
+      "reserved_user": "lerrr0",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "4081",
+      "bookid": "2f4c",
+      "Location_id": "50b3",
+      "userId": "9a5c",
+      "reserved_user": "lerrr19",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "7064",
+      "bookid": "2f4c",
+      "Location_id": "l3",
+      "userId": "9a5c",
+      "reserved_user": "lerrr19",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "e53a",
+      "bookid": "2f4c",
+      "Location_id": "l1",
+      "userId": "9a5c",
+      "reserved_user": "lerrr6",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "b854",
+      "bookid": "2f4c",
+      "Location_id": "l2",
+      "userId": "9a5c",
+      "reserved_user": "lerrr66",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "baf9",
+      "bookid": "2f4c",
+      "Location_id": "089d",
+      "userId": "9a5c",
+      "reserved_user": "lerrr66",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "edea",
+      "bookid": "2f4c",
+      "Location_id": "8345",
+      "userId": "9a5c",
+      "reserved_user": "lerrr99",
+      "Reservation_expiry_date": "2025-12-20",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "1200",
+      "bookid": "2f4c",
+      "Location_id": "a542",
+      "userId": "9a5c",
+      "reserved_user": "lerrr10",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "ae92",
+      "bookid": "2f4c",
+      "Location_id": "e175",
+      "userId": "9a5c",
+      "reserved_user": "lerrr12",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "6384",
+      "bookid": "f38f",
+      "Location_id": "bf76",
+      "userId": "9a5c",
+      "reserved_user": "tamp",
+      "Reservation_expiry_date": "2025-12-24",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "1929",
+      "bookid": "f38f",
+      "Location_id": "5632",
+      "userId": "9a5c",
+      "reserved_user": "pasir",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "2cb7",
+      "bookid": "f38f",
+      "Location_id": "c92f",
+      "userId": "9a5c",
+      "reserved_user": "pasir hhh",
+      "Reservation_expiry_date": "2025-12-25",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "2c0b",
+      "bookid": "2f4c",
+      "Location_id": "c92f",
+      "userId": "9a5c",
+      "reserved_user": "pasir hhhggg",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "a995",
+      "bookid": "2f4c",
+      "Location_id": "c92f",
+      "userId": "9a5c",
+      "reserved_user": "pasir bbb",
+      "Reservation_expiry_date": "2025-12-31",
+      "Reservation_date": "2025-12-20"
+    },
+    {
+      "id": "97d3",
+      "bookid": "2f4c",
+      "Location_id": "cea6",
+      "userId": "9a5c",
+      "reserved_user": "pasir bbb5",
+      "Reservation_expiry_date": "2025-12-23",
+      "Reservation_date": "2025-12-20"
+    }
+  ],
+  "Location": [
+    {
+      "id": "l1",
+      "Location": "Library 3",
+      "level": "Level 1",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "l2",
+      "Location": "Library 1",
+      "level": "Level 2",
+      "shelf": "shelf 2",
+      "shelfId": "s2",
+      "Location_image": "location_image_2.png"
+    },
+    {
+      "id": "l3",
+      "Location": "Library 2",
+      "level": "Level 1",
+      "shelf": "shelf 3",
+      "shelfId": "s3",
+      "Location_image": "location_image_3.png"
+    },
+    {
+      "id": "d8cd",
+      "Location": "Bedok Library",
+      "level": "level 1",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "fdd9",
+      "Location": "Library 4",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "20a5",
+      "Location": "Library 5",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "a542",
+      "Location": "Library 7",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "5f81",
+      "Location": "Library 8",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "089d",
+      "Location": "Tampines Library",
+      "level": "level 1",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "bf76",
+      "Location": "Tampines West Library",
+      "level": "level 1",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "ce72",
+      "Location": "Library 9",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "e12c",
+      "Location": "Library 10",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "ccd5",
+      "Location": "Library 11",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "e175",
+      "Location": "Library 13",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "fead",
+      "Location": "Library 14",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "e7a2",
+      "Location": "Tampines East Library",
+      "level": "level 1",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "8ddf",
+      "Location": "Tampines East Library",
+      "level": "level 2",
+      "shelf": "shelf 2",
+      "shelfId": "s2",
+      "Location_image": "location_image_2.png"
+    },
+    {
+      "id": "50b3",
+      "Location": "Library 17",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "1f1f",
+      "Location": "Library 20",
+      "level": "level 3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "19a6",
+      "Location": "Library 22",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "5632",
+      "Location": "Pasir ris Library",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "8345",
+      "Location": "Pasir ris Library 2",
+      "level": "l3",
+      "shelf": "shelf 1",
+      "shelfId": "s1",
+      "Location_image": "location_image_1.png"
+    },
+    {
+      "id": "83ec",
+      "Location": "Pasir ris Library 3",
+      "level": "level 3",
+      "shelf": "shelf 2",
+      "shelfId": "s2",
+      "Location_image": "location_image_2.png"
+    },
+    {
+      "id": "c92f",
+      "Location": "Pasir ris Library 4",
+      "level": "level 3",
+      "shelf": "shelf 2",
+      "shelfId": "s2",
+      "Location_image": "location_image_2.png"
+    },
+    {
+      "id": "cea6",
+      "Location": "Pasir ris Library 5",
+      "level": "level 3",
+      "shelf": "shelf 2",
+      "shelfId": "s2",
+      "Location_image": "location_image_2.png"
+    }
+  ],
+  "Availability": [
+    {
+      "id": "a1",
+      "bookid": "1",
+      "Location_id": "l1",
+      "status": "No copies Available"
+    },
+    {
+      "id": "a1",
+      "bookid": "1",
+      "Location_id": "l2",
+      "status": "Available"
+    },
+    {
+      "id": "a1",
+      "bookid": "62a7",
+      "Location_id": "l2",
+      "status": "Available"
+    },
+    {
+      "id": "a2",
+      "bookid": "2",
+      "Location_id": "l2",
+      "status": "Available"
+    },
+    {
+      "id": "a3",
+      "bookid": "3",
+      "Location_id": "l3",
+      "status": "Available"
+    },
+    {
+      "id": "20d7",
+      "bookid": "62a7",
+      "Location_id": "d8cd",
+      "status": "Available"
+    },
+    {
+      "id": "af15",
+      "bookid": "8f10",
+      "Location_id": "fdd9",
+      "status": "Available"
+    },
+    {
+      "id": "b477",
+      "bookid": "8f10",
+      "Location_id": "20a5",
+      "status": "Available"
+    },
+    {
+      "id": "2582",
+      "bookid": "62a7",
+      "Location_id": "l1",
+      "status": "Available"
+    },
+    {
+      "id": "1e6c",
+      "bookid": "1",
+      "Location_id": "a542",
+      "status": "Available"
+    },
+    {
+      "id": "6d1f",
+      "bookid": "62a7",
+      "Location_id": "5f81",
+      "status": "Available"
+    },
+    {
+      "id": "2e07",
+      "bookid": "1",
+      "Location_id": "5f81",
+      "status": "Available"
+    },
+    {
+      "id": "9ee2",
+      "bookid": "1c15",
+      "Location_id": "089d",
+      "status": "Available"
+    },
+    {
+      "id": "4415",
+      "bookid": "1c15",
+      "Location_id": "bf76",
+      "status": "Available"
+    },
+    {
+      "id": "e91d",
+      "bookid": "2794",
+      "Location_id": "bf76",
+      "status": "Available"
+    },
+    {
+      "id": "f37f",
+      "bookid": "1b20",
+      "Location_id": "bf76",
+      "status": "Available"
+    },
+    {
+      "id": "115d",
+      "bookid": "1b20",
+      "Location_id": "l1",
+      "status": "Available"
+    },
+    {
+      "id": "c70a",
+      "bookid": "1b20",
+      "Location_id": "ce72",
+      "status": "Available"
+    },
+    {
+      "id": "8862",
+      "bookid": "8595",
+      "Location_id": "e12c",
+      "status": "Available"
+    },
+    {
+      "id": "ba84",
+      "bookid": "1a26",
+      "Location_id": "ccd5",
+      "status": "Available"
+    },
+    {
+      "id": "d7c6",
+      "bookid": "706e",
+      "Location_id": "ccd5",
+      "status": "Available"
+    },
+    {
+      "id": "4d97",
+      "bookid": "706e",
+      "Location_id": "e175",
+      "status": "Available"
+    },
+    {
+      "id": "b027",
+      "bookid": "706e",
+      "Location_id": "l3",
+      "status": "Available"
+    },
+    {
+      "id": "3ea6",
+      "bookid": "279b",
+      "Location_id": "fead",
+      "status": "Available"
+    },
+    {
+      "id": "7d0b",
+      "bookid": "279b",
+      "Location_id": "l3",
+      "status": "Available"
+    },
+    {
+      "id": "74f3",
+      "bookid": "f38f",
+      "Location_id": "e7a2",
+      "status": "Available"
+    },
+    {
+      "id": "e624",
+      "bookid": "f38f",
+      "Location_id": "l1",
+      "status": "No copies Available"
+    },
+    {
+      "id": "d9b8",
+      "bookid": "f38f",
+      "Location_id": "8ddf",
+      "status": "Available"
+    },
+    {
+      "id": "73a5",
+      "bookid": "f38f",
+      "Location_id": "1f1f",
+      "status": "Available"
+    },
+    {
+      "id": "66cc",
+      "bookid": "2f4c",
+      "Location_id": "19a6",
+      "status": "Available"
+    },
+    {
+      "id": "e7d9",
+      "bookid": "2f4c",
+      "Location_id": "5f81",
+      "status": "Available"
+    },
+    {
+      "id": "87a0",
+      "bookid": "2f4c",
+      "Location_id": "5632",
+      "status": "Available"
+    },
+    {
+      "id": "ec09",
+      "bookid": "2f4c",
+      "Location_id": "ce72",
+      "status": "Available"
+    },
+    {
+      "id": "b555",
+      "bookid": "2f4c",
+      "Location_id": "8345",
+      "status": "Available"
+    },
+    {
+      "id": "5f8a",
+      "bookid": "f38f",
+      "Location_id": "83ec",
+      "status": "Available"
+    },
+    {
+      "id": "5a36",
+      "bookid": "f38f",
+      "Location_id": "8345",
+      "status": "Available"
+    },
+    {
+      "id": "9e07",
+      "bookid": "f38f",
+      "Location_id": "c92f",
+      "status": "Available"
+    },
+    {
+      "id": "5638",
+      "bookid": "2f4c",
+      "Location_id": "c92f",
+      "status": "Available"
+    },
+    {
+      "id": "6113",
+      "bookid": "2f4c",
+      "Location_id": "cea6",
+      "status": "Available"
+    }
+  ]
+}
