@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router";
 
 const EditStallForm = () => {
     // 2. Get the stall ID (from /edit-stall/:id route) using useParams
-    const { id } = useParams();
+    const { _id } = useParams();
 
     // 3. Initialize the useNavigate hook to navigate between pages
     const navigate = useNavigate();
@@ -19,7 +19,7 @@ const EditStallForm = () => {
     useEffect(() => {
         const fetchStallById = async () => {
         try {
-            const res = await fetch(`http://localhost:5050/book/${id}`); //Fetch by ID
+            const res = await fetch(`http://localhost:5050/book/${_id}`); //Fetch by ID
             if (!res.ok) throw new Error("Failed to fetch books");
             const data = await res.json();
             // set books to books state to prefill form with fetch data
@@ -29,7 +29,7 @@ const EditStallForm = () => {
         }
     };
     fetchStallById();
-    }, [id]); // Put id in dependency array to ensure effect runs every time the stall id changes
+    }, [_id]); // Put id in dependency array to ensure effect runs every time the stall id changes
 
     const handleChange = (e) => {
         const { name, value } = e.target; // extract name and value
@@ -55,7 +55,7 @@ const EditStallForm = () => {
             Location_id: String(book.Location_id)
         };
         try {
-            const res = await fetch(`http://localhost:5050/book/${id}`, {
+            const res = await fetch(`http://localhost:5050/book/${_id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload),

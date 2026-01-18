@@ -52,7 +52,7 @@ const ReservationPage = () => {
     useEffect(() => {
         const loadReservation = async () => {
             try {
-                const res = await fetch(`http://localhost:5050/reservation/${reservationid}`);
+                const res = await fetch(`http://localhost:5050/reservation-list/${reservationid}`);
                 if (!res.ok) throw new Error("Failed to fetch reservation");
                 const data = await res.json();
                 // const data = await res.json();

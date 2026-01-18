@@ -44,14 +44,14 @@ const BookListLibrarian = ({}) => {
     }, []);
 
     // Create handleDelete function: to remove data from the JSON server and update the current state.
-    const handleDelete = async (id) => {
+    const handleDelete = async (_id) => {
         try {
-            const res = await fetch(`http://localhost:5050/book/${id}`, {
+            const res = await fetch(`http://localhost:5050/book/${_id}`, {
             method: "DELETE",
             });
             if (!res.ok) throw new Error("Failed to delete book");
             // update the books state to remove the deleted book
-            setBooks((prev) => prev.filter((s) => s.id !== id));
+            setBooks((prev) => prev.filter((s) => s._id !== _id));
             
         } catch (e) {
             console.error("Error deleting book:", e.message);
@@ -102,17 +102,17 @@ const BookListLibrarian = ({}) => {
                         
                         className="card-grid"
                       >
-                      <li key={e.id}>
+                      <li key={e._id}>
                         <img src={bookIcon} alt="Book Cover" />
-                        <Link to={`/book/${e.id}`}>{e.title}</Link>
+                        <Link to={`/book/${e._id}`}>{e.title}</Link>
                         {/* Language: {e.author} <br/>                 */}
                       </li>
                                 
                         {/* 7. Add an Edit button to navigate to EditStallForm. */}
-                        <button class = "button" onClick={() => navigate(`/edit-book/${e.id}`)}>
+                        <button class = "button" onClick={() => navigate(`/edit-book/${e._id}`)}>
                         Edit
                         </button>
-                        <button class = "button" onClick={() => handleDelete(e.id)}>Delete</button>
+                        <button class = "button" onClick={() => handleDelete(e._id)}>Delete</button>
                       </div>
                     );
                   })}

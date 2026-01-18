@@ -1,21 +1,25 @@
-import express from "express";
+import dotenv from "dotenv";
+dotenv.config(); // Load environment variables from .env
+
+import express, { response } from "express";
 import cors from "cors";
 
 // Import and use the task routes defined in routes/task.js
-import book from "./routes/books.js";
-
+import books from "./routes/books.js";
+import Availability from "./routes/Availability.js";
+import Reservation from "./routes/reservation.js";
+import user from "./routes/user.js";
+import location from "./routes/Location.js";
+import login from "./routes/login.js";
+// import aiRec from "./routes/aiRecommendations.js";
 // Import Swagger UI libraries
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
 
-import dotenv from "dotenv";
 import mongoose from "mongoose";
 
 // MongoDB Connection
 // Access MongoDB URI from the environment variable
-
-dotenv.config(); // Load environment variables from .env
-
 mongoose
 .connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
@@ -42,7 +46,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Mount all the task-related API endpoints under a specific base path
-app.use("/book", book);
+app.use("/book", books);
+app.use("/edit-book/:_id", books);
+
+// app.use("/:bookid",books)
+app.use("/availability", Availability);
+app.use("/reservation-list", Reservation);
+app.use("/user", user);
+app.use("/Location", location);
+// app.use("/ai", aiRec);
+app.use("/login", login);
 // Initial route to test if your backend server is running properly
 app.get("/", async (req, res) => {
 res.send("<h1>Welcome to my API! The server is running successfully.</h1>");
@@ -58,3 +71,5 @@ console.log(`Server running on http://localhost:${PORT}`);
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 // // Use app.use() to mount the Swagger UI to /api-docs:
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+

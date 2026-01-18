@@ -67,6 +67,7 @@ const Item_location_map = () => {
                     } };
                   })
                 );
+                
                 setAvailability(joined);
                 
 

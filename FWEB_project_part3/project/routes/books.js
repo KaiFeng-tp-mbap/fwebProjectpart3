@@ -2,7 +2,7 @@
 import express from "express";
 // Create a new router instance to define API routes
 const router = express.Router();
-import Book from "../models/books.js";
+import Book from "../models/book.js";
 // POST /book -> Create a new task
 /**
 * @swagger
@@ -19,13 +19,31 @@ import Book from "../models/books.js";
 *                       properties:
 *                           title:
 *                               type: string
-*                           completed:
-*                               type: boolean
+*                           Language:
+*                               type: string
+*                           Description:
+*                               type: string
+*                           author:
+*                               type: string
+*                           published_date:
+*                               type: string
+*                               format: date-time
+*                           reservationid:
+*                               type: string
+*                           Reservation_availablity:
+*                               type: string
+*                               enum:
+*                                   - Reservation Available
+*                                   - No Reservation Available
+*                           Location_id:
+*                               type: string
+*                           Availability_id:
+*                               type: string
 *       responses:
 *           201:
 *               description: Task created successfully
 */
-router.post("/book", async (req, res) => {
+router.post("/", async (req, res) => {
     try {
         // TODO: Get task data from req.body
         const { title, Language,Description,author,published_date,Availability_id, reservationid,Reservation_availablity, Location_id} = req.body;
@@ -35,7 +53,7 @@ router.post("/book", async (req, res) => {
             });
         }
         // TODO: Save the new task to the database
-        const newBook = new Task({
+        const newBook = new Book({
             title,
             Language,
             Description,
@@ -51,9 +69,9 @@ router.post("/book", async (req, res) => {
 
         // Return success response
         res.status(201).json(savedBook);
-        res.json({
-            message: "POST /book - Create a new book endpoint hit successfully",
-        });
+        // res.json({
+        //     message: "POST /book - Create a new book endpoint hit successfully",
+        // });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Server error" });
@@ -76,19 +94,36 @@ router.post("/book", async (req, res) => {
 *                           type: array
 *                           items:
 *                               type: object
-*                           properties:
-*                               id:
-*                                   type: string
-*                               title:
-*                                   type: string
-*                               completed:
-*                                   type: boolean
+*                       properties:
+*                           title:
+*                               type: string
+*                           Language:
+*                               type: string
+*                           Description:
+*                               type: string
+*                           author:
+*                               type: string
+*                           published_date:
+*                               type: string
+*                               format: date-time
+*                           reservationid:
+*                               type: string
+*                           Reservation_availablity:
+*                               type: string
+*                               enum:
+*                                   - Reservation Available
+*                                   - No Reservation Available
+*                           Location_id:
+*                               type: string
+*                           Availability_id:
+*                               type: string
 */
 router.get("/", async (req, res) => {
    try {
     //  TODO: Fetch all tasks from the database and populate the "items" field
-     const books = await Book.find().populate("items");
-     res.status(200).json(tasks);// TODO: Return tasks as JSON
+     const books = await Book.find();
+    //  const bookswithId = books.map(b => ({...b.doc,id:b._id}))
+     res.status(200).json(books);// TODO: Return books as JSON
      
     //  res.json({
     //      message: "GET /book - Retrieve all tasks endpoint hit successfully",
@@ -98,12 +133,12 @@ router.get("/", async (req, res) => {
    }
 });
 
-// GET /tasks/:id -> Retrieve a task by ID
+// GET /book/:id -> Retrieve a task by ID
 /**
 * @swagger
-* /tasks/{id}:
+* /book/{id}:
 *   get:
-*       summary: Retrieve a specific task by ID
+*       summary: Retrieve a specific book by ID
 *       description: Returns a single task based on the provided ID
 *       parameters:
 *           - in: path
@@ -114,33 +149,50 @@ router.get("/", async (req, res) => {
 *
 *       responses:
 *           200:
-*               description: A single task
+*               description: A single book
 *               content:
 *                   application/json:
 *                       schema:
 *                           type: object
 *                           properties:
-*                               id:
-*                                   type: string
 *                               title:
 *                                   type: string
-*                               completed:
-*                                   type: boolean
+*                               Language:
+*                                   type: string
+*                               Description:
+*                                   type: string
+*                               author:
+*                                   type: string
+*                               published_date:
+*                                   type: string
+*                                   format: date-time
+*                               reservationid:
+*                                   type: string
+*                               Reservation_availablity:
+*                                   type: string
+*                                   enum:
+*                                       - Reservation Available
+*                                       - No Reservation Available
+*                               Location_id:
+*                                   type: string
+*                               Availability_id:
+*                                   type: string
 */
 router.get("/:id", async (req, res) => {
    try {
 //      // TODO: Get task ID from req.params.id
-     const bookId = req.params.id;
+     const bookid = req.params.id;
  
 //      // TODO: Fetch the specific task from the database
-     const book = await Book.findById(taskId);
+     const book = await Book.findById(bookid);
  
 //      // TODO: Return the task or an error if not found
-     if (!task) {
-     return res.status(404).json({ message: "Task not found" });
+     if (!book) {
+     return res.status(404).json({ message: "Book not found" });
      }
 //      // Return the task
-     res.json(task);
+    //  res.json({...book._doc,id:book._id});
+     res.json(book);
     //  res.json({
     //      message: `GET /book/${req.params.id} - Retrieve a specific task endpoint hit successfully`,
     //  });
@@ -150,103 +202,75 @@ router.get("/:id", async (req, res) => {
 
 })
 
-// PUT /tasks/:id -> Update a task's details
+// PUT /book/:id -> Update a book's details
 /**
- * @swagger
- * /tasks/{id}:
- *   put:
- *     summary: Update a specific task by ID
- *     description: Updates the details of a task based on the provided ID
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               title:
- *                 type: string
- *               description:
- *                 type: string
- *               statusValue:
- *                 type: string
- *                 enum:
- *                   - Pending
- *                   - In Progress
- *                   - Completed
- *               dueDate:
- *                 type: string
- *                 format: date-time
- *               items:
- *                 type: array
- *                 items:
- *                   type: string
- *                   description: Item ObjectId
- *     responses:
- *       200:
- *         description: Task updated successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 _id:
- *                   type: string
- *                 title:
- *                   type: string
- *                 description:
- *                   type: string
- *                 statusValue:
- *                   type: string
- *                 dueDate:
- *                   type: string
- *                   format: date-time
- *                 items:
- *                   type: array
- *                   items:
- *                     type: string
- */
+* @swagger
+* /book/{id}:
+*   put:
+*       summary: Update a specific book by ID
+*       description: Updates the details of a book based on the provided ID
+*       parameters:
+*           - in: path
+*             name: id
+*             schema:
+*                 type: string
+*             required: true
+*       requestBody:
+*           required: true
+*           content:
+*               application/json:
+*                   schema:
+*                       type: object
+*                       properties:
+*                               title:
+*                                   type: string
+*                               Language:
+*                                   type: string
+*                               Description:
+*                                   type: string
+*                               author:
+*                                   type: string
+*                               published_date:
+*                                   type: string
+*                                   format: date-time
+*                               reservationid:
+*                                   type: string
+*                               Reservation_availablity:
+*                                   type: string
+*                                   enum:
+*                                       - Reservation Available
+*                                       - No Reservation Available
+*                               Location_id:
+*                                   type: string
+*                               Availability_id:
+*                                   type: string
+*       responses:
+*           200:
+*               description: Task updated successfully
+*/
 router.put("/:id", async (req, res) => {
     try {
-        // TODO: Get task ID from req.params.id
-        const taskId = req.params.id;
-
-        // extract fields from req.body
-        const { title, description, statusValue, dueDate, items } = req.body;
-        
-        let validItems = []
-        if (Array.isArray(items)) {
-            validItems = items.filter(id => mongoose.Types.ObjectId.isValid(id));
-            // Optional: reject if some IDs are invalid
-            if (validItems.length !== items.length) {
-                return res.status(400).json({ message: "One or more item IDs are invalid" });
-            }
-        }
-        // TODO: Get updated data from req.body
-        const updatedData = { title, description, statusValue, dueDate, items:validItems }
-        // TODO: Update the task in the database
-        const updatedTask = await Task.findByIdAndUpdate(
-            taskId,
-            updatedData,
-            { new: true, runValidators: true }// TODO: Return the updated task or an error
+    //     // TODO: Get task ID from req.params.id
+        const bookid = req.params.id;
+    //     // TODO: Get updated data from req.body
+        const updatedData = req.body;
+    //     // TODO: Update the task in the database
+        const updatedBook = await Book.findByIdAndUpdate(
+        bookid,
+        updatedData,
+        { new: true, runValidators: true }// TODO: Return the updated book or an error
         
         );
-        // If task not found, return 404
-        if (!updatedTask) {
-            return res.status(404).json({ message: "Task not found"
+    //     // If book not found, return 404
+        if (!updatedBook) {
+        return res.status(404).json({ message: "book not found"
         });
         }
-        // Return the updated task
-        res.status(200).json(updatedTask);
+    //     // Return the updated task
+        res.json(updatedBook);
 
         // res.json({
-        //     message: `PUT /tasks/${req.params.id} - Update task endpoint hit successfully`,
+        //     message: `PUT /tasks/${req.params.id} - Update book endpoint hit successfully`,
         // });
     } catch (error) {
         console.error(error);
@@ -254,13 +278,13 @@ router.put("/:id", async (req, res) => {
     }
 });
 
-// DELETE /tasks/:id -> Delete a task
+// DELETE /book/:id -> Delete a book
 /**
 * @swagger
-* /tasks/{id}:
+* /book/{id}:
 *   delete:
-*       summary: Delete a specific task by ID
-*       description: Deletes a task from the database based on the provided ID
+*       summary: Delete a specific book by ID
+*       description: Deletes a book from the database based on the provided ID
 *       parameters:
 *           - in: path
 *             name: id
@@ -269,28 +293,28 @@ router.put("/:id", async (req, res) => {
 *             required: true
 *       responses:
 *           200:
-*               description: Task deleted successfully
+*               description: book deleted successfully
 */
 router.delete("/:id", async (req, res) => {
-    // try {
+    try {
         // TODO: Get task ID from req.params.id
-        // const bookId = req.params.id;
+        const bookid = req.params.id;
         // // TODO: Remove the task from the database
-        // const deletedBook = await Task.findByIdAndDelete(bookId);
+        const deletedBook = await Book.findByIdAndDelete(bookid);
         // // TODO: Return a success message or error if not found
-        // if (!deletedBook) {
-        //     return res.status(404).json({ message: "book not found"
-        //     });
-        // }
+        if (!deletedBook) {
+            return res.status(404).json({ message: "book not found"
+            });
+        }
         // // Return success message
-        // res.json({ message: "book deleted successfully", task:deletedBook });
-        res.json({
-            message: `DELETE /book/${req.params.id} - Delete task endpoint hit successfully`,
-        });
-    // } catch (error) {
-    //     console.error(error);
-    //     res.status(500).json({ message: "Server error" });
-    // }
+        res.json({ message: "book deleted successfully", task:deletedBook });
+        // res.json({
+        //     message: `DELETE /book/${req.params.id} - Delete task endpoint hit successfully`,
+        // });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
 })
 
 export default router;

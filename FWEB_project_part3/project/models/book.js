@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-// import Item from "./item.js"; // Import the Item model
 
 const Book  = new mongoose.Schema({
     // add schema fields
@@ -14,31 +13,31 @@ const Book  = new mongoose.Schema({
     // field: Description, data type: string
     Description: String,
 
-    // field: Description, data type: string
+    // field: author, data type: string
     author: String,
 
-    // field: dueDate, data type: Date,
-    // validation rules: Date Value > Date.now() future date
+    // field: published_date, data type: Date,
     published_date: {
         type: Date,
-        validate: {
-            validator: (value) => !value || value > new Date(),
-            message: "Due date must be in the future",
-        },
+        
     },
+
+    // field: author, data type: string
+    reservationid: String,
+
     // field: Reservation_availablity, data type: string [default: Reservation Available],
-    // validation rules: enum: ["Reservation Available", "No Reservation  Available"]
+    // validation rules: enum: ["Reservation Available", "No Reservation Available"]
     Reservation_availablity: {
         type: String,
-        enum: ["Reservation Available", "No Reservation  Available"], // Validation
+        enum: ["Reservation Available", "No Reservation Available"], // Validation
         default: "Reservation Available",
     },
 
-    // field: Location_id, data type: string
-    Location_id: String,
     
-    // field: Availability_id, data type: string
-    Availability_id: String,
+    // field: Description, data type: string
+    Location_id: String,
+
+    Availability_id: String
 });
 // export task model
 export default mongoose.model("book", Book);

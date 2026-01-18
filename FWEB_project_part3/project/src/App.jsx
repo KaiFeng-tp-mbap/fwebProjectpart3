@@ -74,7 +74,7 @@ function App() {
           <Route path='/add-book' element={<AddBookForm />} />
           <Route path='/book/:bookid/availability/add-availability' element={<AddAvailabilityForm />} />
           <Route path='/book/:bookid/availability/add-location' element={<AddLocationForm />} />
-          <Route path='/edit-book/:id' element={<EditBookForm />} />
+          <Route path='/edit-book/:_id' element={<EditBookForm />} />
         </Route>
 
         {/* librarian-only routes */}

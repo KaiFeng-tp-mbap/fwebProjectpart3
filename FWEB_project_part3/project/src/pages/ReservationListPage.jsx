@@ -34,7 +34,7 @@ const ReservationListPage = () => {
         useEffect(() => {
         const loadReservationList = async () => {
             try {
-                const res = await fetch(`http://localhost:5050/reservation?bookid=${bookid}`);
+                const res = await fetch(`http://localhost:5050/reservation-list?bookid=${bookid}`);
                 const data = await res.json();
                 if (!res.ok) throw new Error("Failed to fetch reservation");
                 // const data = await res.json();
@@ -97,7 +97,7 @@ const ReservationListPage = () => {
             
             return (
               <div
-                key={entry.id}
+                key={entry._id}
                 style={{
                   background: "lightblue",
                   padding: 18,
@@ -115,7 +115,7 @@ const ReservationListPage = () => {
                 </div>
                 
                 {available ? (
-                  <Link to={`/book/${bookid}/reservation-list/${entry.id}`} style={{ textDecoration: "none" }}>
+                  <Link to={`/book/${bookid}/reservation-list/${entry._id}`} style={{ textDecoration: "none" }}>
                     <button
                       style={{
                         padding: "8px 14px",

@@ -106,9 +106,9 @@ const BookList = ({}) => {
                         
                         className="card-grid"
                       >
-                      <li key={e.id}>
+                      <li key={e._id}>
                         <img src={bookIcon} alt="Book Cover" />
-                        <Link to={`/book/${e.id}`}>{e.title}</Link>
+                        <Link to={`/book/${e._id}`}>{e.title}</Link>
                         {/* Language: {e.author} <br/>                 */}
                       </li>
                                 
