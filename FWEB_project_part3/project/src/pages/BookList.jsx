@@ -73,7 +73,7 @@ const BookList = ({}) => {
     return (
         <>
       <MyAppNav />
-      <h1>The Librarian </h1>
+      <h1>The Librarian Page</h1>
       
       {/* <Link to={`/login`} className="btn-signout">Sign Out</Link> */}
       <button onClick={handleSignOut} className="btn-signout">
