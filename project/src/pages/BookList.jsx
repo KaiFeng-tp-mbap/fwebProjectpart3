@@ -100,7 +100,7 @@ const BookList = ({}) => {
         <h1 align="left">Most Popular Books</h1>
         <div style={{ marginTop: 12 }}>
                   {displayedEvents.map((e) => {
-                    // 
+                    
                     return (
                       <div
                         
