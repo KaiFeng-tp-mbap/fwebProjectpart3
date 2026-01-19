@@ -98,7 +98,7 @@ const BookList = ({}) => {
             }}
         />
         <br></br>
-        <h1 align="left">Most Popular Books</h1>
+        <h1 align="left">The Most Popular Books</h1>
         <div style={{ marginTop: 12 }}>
                   {displayedEvents.map((e) => {
                     
