@@ -152,7 +152,6 @@ router.get("/", async (req, res) => {
 *                                   format: date-time
 *                               Location_id:
 *                                   type: string
-*                                   description: Item ObjectId
 */
 router.get("/:id", async (req, res) => {
    try {
@@ -160,7 +159,7 @@ router.get("/:id", async (req, res) => {
      const reservationid = req.params.id;
  
 //      // TODO: Fetch the specific task from the database
-     const reservation = await Reservation.findById(reservationid).populate("Location_id");
+     const reservation = await Reservation.findById(reservationid);
  
 //      // TODO: Return the task or an error if not found
      if (!reservation) {

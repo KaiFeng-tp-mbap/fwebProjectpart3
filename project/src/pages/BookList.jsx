@@ -42,7 +42,7 @@ const BookList = ({}) => {
     };
     loadBooks();
     }, []);
-
+    
     // Create handleDelete function: to remove data from the JSON server and update the current state.
     const handleDelete = async (id) => {
         try {
@@ -70,10 +70,11 @@ const BookList = ({}) => {
     } else {
         displayedEvents = book; // show all events
     }
+    
     return (
         <>
       <MyAppNav />
-      <h1>The Librarian Page</h1>
+      <h1>The Librarian </h1>
       
       {/* <Link to={`/login`} className="btn-signout">Sign Out</Link> */}
       <button onClick={handleSignOut} className="btn-signout">
@@ -96,9 +97,8 @@ const BookList = ({}) => {
               }
             }}
         />
-        
         <br></br>
-        <h1 align="left">The Most Popular Books</h1>
+        <h1 align="left">Most Popular Books</h1>
         <div style={{ marginTop: 12 }}>
                   {displayedEvents.map((e) => {
                     

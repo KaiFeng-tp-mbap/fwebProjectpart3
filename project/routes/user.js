@@ -15,7 +15,7 @@ import { authMiddleware } from "../middleware/authMiddleware.js";
 * /user:
 *   post:
 *       summary: Create a new user
-*       description: Creates a new book in the database
+*       description: Creates a new user in the database
 *       requestBody:
 *           required: true
 *           content:
@@ -106,6 +106,7 @@ router.get("/", async (req, res) => {
    try {
     //  TODO: Fetch all users from the database and populate the "items" field
      const users = await User.find();
+     
      res.status(200).json(users);// TODO: Return reservations as JSON
      
     //  res.json({
@@ -152,13 +153,13 @@ router.get("/", async (req, res) => {
 *                                       - librarian
 *                                       - user
 */
-router.get("/:id",authMiddleware, async (req, res) => {
+router.get("/:id", async (req, res) => {
    try {
 //      // TODO: Get task ID from req.params.id
      const userId = req.params.id;
  
 //      // TODO: Fetch the specific task from the database
-     const user = await User.findById(userId).select("-password");
+     const user = await User.findById(userId);
  
 //      // TODO: Return the task or an error if not found
      if (!user) {
@@ -294,6 +295,9 @@ router.delete("/:id", async (req, res) => {
 *               application/json:
 *                   schema:
 *                       type: object
+*                       required:
+*                           - email
+*                           - password
 *                       properties:
 *                           email:
 *                               type: string
@@ -302,6 +306,10 @@ router.delete("/:id", async (req, res) => {
 *       responses:
 *           200:
 *               description: login successful
+*           401:
+*               description: login failed
+*           500:
+*               description: server error
 */
 
 router.post("/login", async (req, res) => {

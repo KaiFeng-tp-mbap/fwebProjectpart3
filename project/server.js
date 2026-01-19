@@ -54,7 +54,7 @@ app.use("/availability", Availability);
 app.use("/reservation-list", Reservation);
 app.use("/user", user);
 app.use("/Location", location);
-// app.use("/ai", aiRec);
+// app.use("/recommendations", aiRec);
 app.use("/login", login);
 // Initial route to test if your backend server is running properly
 app.get("/", async (req, res) => {
